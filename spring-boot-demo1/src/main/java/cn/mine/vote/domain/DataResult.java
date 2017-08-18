@@ -1,4 +1,4 @@
-package cn.tvfan.vote.domain;
+package cn.mine.vote.domain;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,13 +1,13 @@
-package cn.tvfan.vote.api;
+package cn.mine.vote.api;
 
-import cn.tvfan.vote.domain.DataResult;
-import cn.tvfan.vote.domain.ShareInfo;
-import cn.tvfan.vote.domain.StarsGroup;
-import cn.tvfan.vote.entity.Ticket;
-import cn.tvfan.vote.entity.VoteRecord;
-import cn.tvfan.vote.repository.TicketRepository;
-import cn.tvfan.vote.service.VoteService;
-import cn.tvfan.vote.util.Security;
+import cn.mine.vote.domain.DataResult;
+import cn.mine.vote.domain.ShareInfo;
+import cn.mine.vote.domain.StarsGroup;
+import cn.mine.vote.entity.Ticket;
+import cn.mine.vote.entity.VoteRecord;
+import cn.mine.vote.repository.TicketRepository;
+import cn.mine.vote.service.VoteService;
+import cn.mine.vote.util.Security;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

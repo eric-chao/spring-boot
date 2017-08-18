@@ -1,6 +1,6 @@
-package cn.tvfan.vote.entity;
+package cn.mine.vote.entity;
 
-import cn.tvfan.vote.util.HTTPClient;
+import cn.mine.vote.util.HTTPClient;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import javax.persistence.Entity;

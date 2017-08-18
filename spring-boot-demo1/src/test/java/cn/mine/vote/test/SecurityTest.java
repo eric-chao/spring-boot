@@ -1,7 +1,7 @@
-package cn.tvfan.vote.test;
+package cn.mine.vote.test;
 
-import cn.tvfan.vote.domain.ShareInfo;
-import cn.tvfan.vote.util.Security;
+import cn.mine.vote.domain.ShareInfo;
+import cn.mine.vote.util.Security;
 
 public class SecurityTest {
 

@@ -1,4 +1,4 @@
-package cn.tvfan.vote.entity;
+package cn.mine.vote.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

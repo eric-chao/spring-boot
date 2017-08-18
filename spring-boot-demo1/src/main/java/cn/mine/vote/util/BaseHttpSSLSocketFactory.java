@@ -13,7 +13,7 @@
  *   xshu       2014-05-28     SSLSocket 链接工具类(用于https)
  * =============================================================================
  */
-package cn.tvfan.vote.util;
+package cn.mine.vote.util;
 
 import java.io.IOException;
 import java.net.InetAddress;

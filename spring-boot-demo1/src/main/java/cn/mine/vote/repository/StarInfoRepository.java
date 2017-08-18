@@ -1,7 +1,6 @@
-package cn.tvfan.vote.repository;
+package cn.mine.vote.repository;
 
-import cn.tvfan.vote.entity.StarInfo;
-import cn.tvfan.vote.entity.VoteRecord;
+import cn.mine.vote.entity.StarInfo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

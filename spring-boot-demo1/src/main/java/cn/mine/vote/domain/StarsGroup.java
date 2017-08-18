@@ -1,6 +1,6 @@
-package cn.tvfan.vote.domain;
+package cn.mine.vote.domain;
 
-import cn.tvfan.vote.entity.StarInfo;
+import cn.mine.vote.entity.StarInfo;
 
 import java.util.ArrayList;
 import java.util.List;

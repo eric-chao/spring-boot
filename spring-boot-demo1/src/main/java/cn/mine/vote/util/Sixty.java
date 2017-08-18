@@ -11,7 +11,7 @@
  *                  fileName：Sixty.java
  *  -------------------------------------------------------------------------------
  */
-package cn.tvfan.vote.util;
+package cn.mine.vote.util;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package cn.tvfan.vote.util;
+package cn.mine.vote.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -7,8 +7,6 @@ import javax.net.ssl.HttpsURLConnection;
 import java.io.*;
 import java.net.*;
 import java.util.Map;
-
-import cn.tvfan.vote.util.BaseHttpSSLSocketFactory.TrustAnyHostnameVerifier;
 
 
 public class HTTPClient {
@@ -214,7 +212,7 @@ public class HTTPClient {
             //是否验证https证书，测试环境请设置false，生产环境建议优先尝试true，不行再false
             if (!isIfValidateRemoteCert) {
                 husn.setSSLSocketFactory(new BaseHttpSSLSocketFactory());
-                husn.setHostnameVerifier(new TrustAnyHostnameVerifier());//解决由于服务器证书问题导致HTTPS无法访问的情况
+                husn.setHostnameVerifier(new BaseHttpSSLSocketFactory.TrustAnyHostnameVerifier());//解决由于服务器证书问题导致HTTPS无法访问的情况
             }
             return husn;
         }
@@ -245,7 +243,7 @@ public class HTTPClient {
             //是否验证https证书，测试环境请设置false，生产环境建议优先尝试true，不行再false
             if (!isIfValidateRemoteCert) {
                 husn.setSSLSocketFactory(new BaseHttpSSLSocketFactory());
-                husn.setHostnameVerifier(new TrustAnyHostnameVerifier());//解决由于服务器证书问题导致HTTPS无法访问的情况
+                husn.setHostnameVerifier(new BaseHttpSSLSocketFactory.TrustAnyHostnameVerifier());//解决由于服务器证书问题导致HTTPS无法访问的情况
             }
             return husn;
         }

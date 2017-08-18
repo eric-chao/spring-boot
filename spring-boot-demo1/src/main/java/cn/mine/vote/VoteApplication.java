@@ -1,4 +1,4 @@
-package cn.tvfan.vote;
+package cn.mine.vote;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

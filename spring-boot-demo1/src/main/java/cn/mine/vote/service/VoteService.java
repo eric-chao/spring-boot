@@ -1,9 +1,9 @@
-package cn.tvfan.vote.service;
+package cn.mine.vote.service;
 
-import cn.tvfan.vote.entity.StarInfo;
-import cn.tvfan.vote.entity.VoteRecord;
-import cn.tvfan.vote.repository.StarInfoRepository;
-import cn.tvfan.vote.repository.VoteRecordRepository;
+import cn.mine.vote.entity.StarInfo;
+import cn.mine.vote.entity.VoteRecord;
+import cn.mine.vote.repository.StarInfoRepository;
+import cn.mine.vote.repository.VoteRecordRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
