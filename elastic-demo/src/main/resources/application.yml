@@ -1,0 +1,12 @@
+
+
+spring:
+  data:
+    elasticsearch:
+      cluster-name: tvfan-search
+      cluster-nodes: 172.16.40.89:9300,172.16.40.90:9300,172.16.40.91:9300
+
+server:
+  port: 8000
+  servlet:
+    context-path: /so-api
