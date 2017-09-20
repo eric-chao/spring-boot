@@ -10,3 +10,24 @@ server:
   port: 8000
   servlet:
     context-path: /so-api
+
+management:
+  address: 127.0.0.1
+  port: 8001
+  context-path: /application
+
+endpoints:
+  autoconfig:
+    enabled: true
+  beans:
+    enabled: true
+  env:
+    enabled: true
+  health:
+    enabled: true
+  mappings:
+    enabled: true
+  metrics:
+    enabled: true
+  status:
+    enabled: true

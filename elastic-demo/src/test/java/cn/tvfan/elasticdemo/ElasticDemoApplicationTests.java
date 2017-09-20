@@ -11,6 +11,7 @@ public class ElasticDemoApplicationTests {
 
 	@Test
 	public void contextLoads() {
+
 	}
 
 }

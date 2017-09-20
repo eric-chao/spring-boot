@@ -15,7 +15,7 @@ public class Employee {
 
     String name;
 
-    Branch branch;
+    String branch;
 
     public String getId() {
         return id;
@@ -49,11 +49,11 @@ public class Employee {
         this.name = name;
     }
 
-    public Branch getBranch() {
+    public String getBranch() {
         return branch;
     }
 
-    public void setBranch(Branch branch) {
+    public void setBranch(String branch) {
         this.branch = branch;
     }
 }

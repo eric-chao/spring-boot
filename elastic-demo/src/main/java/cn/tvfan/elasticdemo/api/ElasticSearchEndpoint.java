@@ -24,26 +24,31 @@ public class ElasticSearchEndpoint {
     EmployeeRepository employeeRepository;
 
     @RequestMapping("/branch")
-    public List<Branch> soBranch(@RequestParam(value = "q", defaultValue = "") String q) {
+    public List<Branch> soBranch(
+            @RequestParam(value = "q", defaultValue = "") String q,
+            @RequestParam(value = "page", defaultValue = "0") int page,
+            @RequestParam(value = "size", defaultValue = "20") int size) {
         //String queryString = "springboot";//搜索关键字
         //QueryStringQueryBuilder builder = new QueryStringQueryBuilder(queryString);
-        List<Branch> branchList = branchRepository.findByCity(q);
-        return branchList;
-    }
-
-    @RequestMapping("/employee")
-    public List<Employee> soEmployee(@RequestParam(value = "id", defaultValue = "") String id) {
-        Branch branch = new Branch(id);
-        List<Employee> employeeList = employeeRepository.findByBranch(branch);
-        return employeeList;
+        Pageable pageable = PageRequest.of(page, size);
+        Page<Branch> branchList = branchRepository.findByCity(q, pageable);
+        return branchList.getContent();
     }
 
     @RequestMapping("/all/employee")
-    public List<Employee> soEmployee(@RequestParam(value = "page", defaultValue = "0") int page,
-                                     @RequestParam(value = "size", defaultValue = "20") int size) {
+    public List<Employee> soEmployee(
+            @RequestParam(value = "page", defaultValue = "0") int page,
+            @RequestParam(value = "size", defaultValue = "20") int size) {
 
         Pageable pageable = PageRequest.of(page, size);
         Page<Employee> employeeList = employeeRepository.findAll(pageable);
         return employeeList.getContent();
     }
+
+    @RequestMapping("/employee")
+    public Employee soEmployee(@RequestParam(value = "id") String id) {
+        Employee employee = employeeRepository.findById(id);
+        return employee;
+    }
+
 }
